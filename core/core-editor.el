@@ -192,6 +192,10 @@ savehist file."
   (add-hook 'evil-replace-state-entry-hook #'turn-off-smartparens-mode)
   (add-hook 'evil-replace-state-exit-hook  #'turn-on-smartparens-mode)
 
+  (setq evil-lisp-state-global t)
+  (require 'evil-lisp-state)
+  (evil-lisp-state-leader "SPC k")
+
   (smartparens-global-mode +1))
 
 ;; Automatic detection of indent settings

@@ -31,6 +31,7 @@
 (package! helpful)
 (package! pcre2el)
 (package! smartparens)
+(package! evil-lisp-state)
 (package! undo-tree)
 (package! ws-butler)
 
