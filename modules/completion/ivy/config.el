@@ -58,6 +58,9 @@ immediately runs it on the current candidate (ending the ivy session)."
   (after! yasnippet
     (add-to-list 'yas-prompt-functions #'+ivy-yas-prompt nil #'eq))
 
+  (after! prescient
+    (ivy-prescient-mode 1))
+
   (define-key! 'global
     [remap switch-to-buffer]       #'ivy-switch-buffer
     [remap persp-switch-to-buffer] #'+ivy/switch-workspace-buffer

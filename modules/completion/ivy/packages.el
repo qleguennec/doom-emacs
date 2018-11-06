@@ -9,6 +9,8 @@
 (package! ivy-hydra)
 (package! ivy-rich)
 (package! wgrep)
+(package! prescient)
+(package! ivy-prescient)
 
 (when (featurep! +fuzzy)
   (package! flx))
